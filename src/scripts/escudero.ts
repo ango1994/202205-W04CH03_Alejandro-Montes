@@ -1,5 +1,5 @@
-import { Luchador } from './luchador.js';
-import { Personaje } from './personaje.js';
+import { Luchador } from './luchador';
+import { Personaje } from './personaje';
 
 export class Escudero extends Personaje {
     constructor(

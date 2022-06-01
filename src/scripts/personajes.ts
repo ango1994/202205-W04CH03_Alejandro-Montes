@@ -1,8 +1,8 @@
-import { Asesor } from './asesor.js';
-import { Escudero } from './escudero.js';
-import { Luchador } from './luchador.js';
-import { Rey } from './rey.js';
-import { Personaje } from './personaje.js';
+import { Asesor } from './asesor';
+import { Escudero } from './escudero';
+import { Luchador } from './luchador';
+import { Rey } from './rey';
+import { Personaje } from './personaje';
 
 export function crearPersonajes() {
     const data: Array<Personaje> = [

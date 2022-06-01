@@ -1,14 +1,21 @@
-export function CardList() {
+import { Personaje } from '../scripts/personaje';
+
+export function CardList({ personaje }: { personaje: Personaje }) {
     return (
         <>
-            <h2 className="character__name card-title h4">Nombre y familia</h2>
+            <h2 className="character__name card-title h4">
+                {personaje.nombre} - {personaje.familia}
+            </h2>
             <div className="character__info">
                 <ul className="list-unstyled">
-                    <li>Edad: X años</li>
+                    <li>Edad: {personaje.edad} años</li>
                     <li>
                         Estado:
-                        <i className="fas fa-thumbs-down"></i>
-                        <i className="fas fa-thumbs-up"></i>
+                        {personaje.estadoVivo ? (
+                            <i className="fas fa-thumbs-up"></i>
+                        ) : (
+                            <i className="fas fa-thumbs-down"></i>
+                        )}
                     </li>
                 </ul>
             </div>
