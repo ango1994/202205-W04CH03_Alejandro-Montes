@@ -16,7 +16,9 @@ export function Card({ personaje }: { personaje: Personaje }) {
                     <div className="card-body">
                         <CardList personaje={personaje}></CardList>
                         <div className="character__overlay">
-                            <InformationList></InformationList>
+                            <InformationList
+                                personaje={personaje}
+                            ></InformationList>
                             <div className="character__actions">
                                 <ButtonSpeak></ButtonSpeak>
                                 <ButtonDeath></ButtonDeath>
